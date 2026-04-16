@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SND - Carte Digitale</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1e2e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    background: #1c2f3f;
+    border-radius: 20px;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* Logo image */
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid olive;
+}
+
+/* Text */
+.company {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.name {
+    color: olive;
+    font-size: 22px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.role {
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: olive;
+    width: 90%;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6b8e23;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- 🔥 حط logo هنا -->
+    <div class="logo">
+        <img src="logo.png" alt="SND Logo">
+    </div>
+
+    <div class="company">Société Nord Distribution</div>
+    <div class="name">Mounir Ben El Aid</div>
+    <div class="role">Gérant</div>
+
+    <div class="info">
+        Vente fournitures de bureau<br>
+        Matériel consommable informatique
+    </div>
+
+    <div class="info">
+        📍 9 Rue de l’Indépendance, Denden - Manouba
+    </div>
+
+    <a href="tel:+21695645130" class="btn">📞 Appeler</a>
+    <a href="mailto:snd.nord2014@yahoo.com" class="btn">✉️ Email</a>
+    <a href="https://wa.me/21695645130" class="btn">💬 WhatsApp</a>
+
+    <!-- 🔥 vCard download -->
+    <a href="contact.vcf" class="btn">💾 Ajouter au contacts</a>
+
+    <div class="footer">Powered by KLYX</div>
+
+</div>
+
+</body>
+</html>
