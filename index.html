@@ -23,14 +23,16 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    align-items: flex-start;
+    padding: 60px 10px 20px;
+
+    overflow-x: hidden; /* 👈 يمنع espace على الجنب */
 }
 
 /* Waves */
 .wave {
     position: absolute;
-    width: 200%;
+    width: 150%; /* 👈 نقصناها باش ما تعملش overflow */
     height: 200px;
     background: rgba(107,142,35,0.15);
     bottom: 0;
@@ -54,7 +56,8 @@ body {
 .card {
     position: relative;
     z-index: 10;
-    width: 350px;
+    width: 90%;        /* 👈 responsive */
+    max-width: 350px;  /* 👈 limit */
     padding: 25px;
     border-radius: 25px;
     background: linear-gradient(145deg, #162635, #0f1e2e);
@@ -98,7 +101,7 @@ body {
     margin: 10px auto;
     padding: 12px;
     border-radius: 12px;
-    width: 90%;
+    width: 100%; /* 👈 باش ما يخرجش */
     text-decoration: none;
     color: white;
     background: linear-gradient(90deg, #556b2f, #6b8e23);
