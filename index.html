@@ -9,13 +9,22 @@
 
 <style>
 
-body {
+* {
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
     background: #0b1622;
     font-family: Arial, sans-serif;
-    overflow: hidden;
     color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Waves */
@@ -46,9 +55,6 @@ body {
     position: relative;
     z-index: 10;
     width: 350px;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
     padding: 25px;
     border-radius: 25px;
     background: linear-gradient(145deg, #162635, #0f1e2e);
@@ -149,12 +155,10 @@ body {
         <i class="fa-brands fa-whatsapp"></i> WhatsApp
     </a>
 
-    <!-- 📍 MAPS BUTTON -->
     <a href="https://maps.google.com/?q=9 Rue de l’Indépendance Denden Manouba" target="_blank" class="btn">
         <i class="fa-solid fa-location-dot"></i> Voir sur la carte
     </a>
 
-    <!-- 💾 VCARD -->
     <a href="contact.vcf" class="btn">
         <i class="fa-solid fa-address-book"></i> Ajouter au contacts
     </a>
